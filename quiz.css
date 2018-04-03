@@ -1,0 +1,61 @@
+.questionBox, .resultBox {
+	width: 80%;
+	position: absolute;	
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px 10px;
+	border: 2px solid #3B5998;
+	border-radius: 8px;
+}
+
+.question {
+	padding: 20px;
+	background: #3B5998;
+	color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#optionsDiv {
+	width: 95%;
+	text-align: center;
+	margin: 5% 2.5% 3% 2.5%;
+}
+
+.options {
+	width: 400px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: rgba(0, 132, 180, 1);
+	margin: 10px 0 10px 10px;
+	border-radius: 8px;
+	color: #fff;
+	transition: 0.5s;
+	text-align: left;
+}
+
+.options:hover {
+	cursor: pointer;
+	background: rgba(59, 89, 152, 1);
+	transition: 0.5s;
+}
+
+.options input:checked .options {
+	background: rgba(59, 89, 152, 1);
+}
+
+.next-btn {
+	border: none;
+	outline: none;
+	background: rgba(59, 89, 152, 0.9);
+	color: #fff;
+	width: 150px;
+	padding: 10px 0;
+	border-radius: 8px;
+	margin: 10px;
+}
+
+.next-btn:hover {
+	background: rgba(59, 89, 152, 1);
+}

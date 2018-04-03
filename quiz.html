@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Simple Quiz App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="quiz.css">
+	</head>
+
+	<body onload="getQuestions(currentQuestion);">
+		
+
+		
+		<div class="container"><br><br>
+			
+			
+
+			<h2 class="text-center">Classical Music Quiz</h2><br><br><br><br>
+			<div id="container" class="questionBox">
+				<div class="question" id="question"></div>
+				<div id="optionsDiv">
+					<label class="options"> <input type="radio" name="option" value="1"> <span id="opt1"></span> </label>
+					<label class="options"> <input type="radio" name="option" value="2"> <span id="opt2"></span> </label>
+					<label class="options"> <input type="radio" name="option" value="3"> <span id="opt3"></span> </label>
+					<label class="options"> <input type="radio" name="option" value="4"> <span id="opt4"></span> </label>
+				</div>
+				<div class="text-center">
+					<button id="nextBtn" class="next-btn">Load next question</button>
+				</div>
+			</div>
+
+
+
+			<div id="resultDiv" class="resultBox text-center" style="display: none;">	</div>
+
+		</div>
+		
+		
+
+		<script src="questions.js"></script>
+		<script src="quiz.js"></script>		
+	</body>
+</html>
